@@ -1,12 +1,12 @@
 import Navbar from './components/Navbar'
+import Hero from './components/Hero'
 
 
 export default function Home() {
   return (
-    <>
+    <div className = "flex flex-col h-screen">
       <Navbar />
-      <h1 className="text-2xl">Hello World</h1>
-    </>
-    
+      <Hero />
+    </div>
   );
 }
