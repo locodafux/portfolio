@@ -1,3 +1,5 @@
+import Banner from "./Image"
+
 const Hero = () => {
   return (
     <div className = "flex-1 flex  w-screen ">
@@ -24,7 +26,7 @@ const Hero = () => {
       </div>
 
       <div className = "w-1/2">
-        right
+        <Banner id="Banner" alt="Image" />
       </div>
     </div>
   )
