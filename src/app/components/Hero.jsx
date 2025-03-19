@@ -17,7 +17,7 @@ const Hero = () => {
 
   const Left = () => {
     return (
-      <div className={`${isMobile ? "w-screen" : "w-1/2"} flex flex-col items-center mt-24 p-16`}>
+      <div className={`${isMobile ? "w-screen" : "w-1/2"} flex flex-col items-center mt-24 p-24`}>
         <div className="flex flex-col gap-y-8">
           <div className={`${ isMobile ? "text-3xl" : "text-5xl"} flex flex-col gap-y-4`}>
             <div>

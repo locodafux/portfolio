@@ -15,7 +15,7 @@ const Skills = () => {
       name: "Figma",
     },
     {
-      id: "icon-javscript",
+      id: "icon-javascript",
       name: "JavaScript",
     },
     {
@@ -40,7 +40,7 @@ const Skills = () => {
       <div className="w-screen flex justify-center gap-x-3">
         <span className="text-5xl ">My</span> <span className = "text-5xl font-bold">Skills</span>
       </div>
-      <div className="grid grid-cols-4 gap-4 w-full max-w-6xl mt-10">
+      <div className="grid grid-cols-4 gap-24 w-full max-w-6xl mt-24">
         {
           skillList.map((item, index) => (
             <SkillCard key={index} id={item.id} name={item.name} alt="icon"/>
