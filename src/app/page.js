@@ -8,7 +8,7 @@ export default function Home() {
     <div className = "flex flex-col h-screen">
       <Navbar />
       <Hero />
-      <Skills />
+      <Skills id="skills" />
     </div>
   );
 }
