@@ -11,7 +11,6 @@ const Skills = () => {
         <SkillCard id="icon-git" name="Git" alt="git"/>
         <SkillCard id="icon-git" name="Git" alt="git"/>
         <SkillCard id="icon-git" name="Git" alt="git"/>
-        <SkillCard id="icon-git" name="Git" alt="git"/>
       </div>
     </div>
   )
