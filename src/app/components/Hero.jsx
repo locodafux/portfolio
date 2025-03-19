@@ -1,5 +1,5 @@
 'use client'
-import Banner from "./Image"
+import {Banner}from "./Image"
 import { useState, useEffect } from "react";
 
 const Hero = () => {

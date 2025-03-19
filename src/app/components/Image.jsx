@@ -8,4 +8,15 @@ const Banner = ({id, alt}) => {
   )
 } 
 
-export default Banner
+const SkillImage = ({id, alt}) => {
+  return (
+    <div className="relative w-full h-full">
+      <Image src = {`/skills/${id}.svg`} alt = {`${alt}`} fill className="object-contain" /> 
+    </div>
+  )
+}
+
+export {
+  Banner,
+  SkillImage
+} 
