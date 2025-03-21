@@ -15,7 +15,7 @@ const Navbar = () => {
         <span className= "font-bold text-2xl">Tims</span> 
       </div> 
 
-      <div className = "flex w-[40%] justify-between">
+      <div className = "flex w-[35%] justify-between font-semibold">
         <button onClick = {() => scrollToSection("skills")} className="cursor-pointer">Skills</button>
         <a>About Me</a>
         <a>Project</a>
