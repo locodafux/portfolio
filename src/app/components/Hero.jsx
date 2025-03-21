@@ -13,11 +13,11 @@ const Hero = () => {
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, []); // Prevent infinite re-renders
+  }, []); 
 
   const Left = () => {
     return (
-      <div className={`${isMobile ? "w-screen p-12 justify-center" : "w-1/2 p-24"} flex flex-col items-center  mt-24 `}>
+      <div className={`${isMobile ? "w-screen px-18 justify-center" : "w-1/2 p-24 mt-24"} flex flex-col items-center`}>
         <div className="flex flex-col gap-y-8">
           <div className={`${ isMobile ? "text-3xl items-center" : "text-5xl"} flex flex-col gap-y-4`}>
             <div>
@@ -53,7 +53,7 @@ const Hero = () => {
   };
 
   return (
-    <div className={`flex ${isMobile ? "flex-col-reverse" : "flex-row"} min-h-screen w-screen`}>
+    <div className={`flex ${isMobile ? "flex-col-reverse" : "flex-row "}  w-screen`}>
       <Left />
       {!isMobile && <Right />}
     </div>
