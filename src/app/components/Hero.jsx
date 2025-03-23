@@ -53,7 +53,7 @@ const Hero = () => {
   };
 
   return (
-    <div className={`flex ${isMobile ? "flex-col-reverse" : "flex-row "}  w-screen`}>
+    <div className={`flex min-h-screen w-screen `}>
       <Left />
       {!isMobile && <Right />}
     </div>
