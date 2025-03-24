@@ -15,11 +15,11 @@ const Navbar = () => {
         <span className= "font-bold text-2xl">Tims</span> 
       </div> 
 
-      <div className = "flex w-[35%] justify-between font-semibold">
+      <div className = "flex w-[35%] justify-between">
         <button onClick = {() => scrollToSection("skills")} className="cursor-pointer">Skills</button>
-        <a>About Me</a>
-        <a>Project</a>
-        <a>Contact Me</a>
+        <button onClick = {() => scrollToSection("about")} className="cursor-pointer">About Me</button>
+        <button onClick = {() => scrollToSection("projects")} className="cursor-pointer">Project</button>
+        <button onClick = {() => scrollToSection("contact")} className="cursor-pointer">Contact</button>
       </div> 
 
       <div>
@@ -30,5 +30,5 @@ const Navbar = () => {
     </div>
   )
 }
-
 export default Navbar
+

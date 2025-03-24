@@ -1,4 +1,5 @@
 import SkillCard from "./SkillCard"
+import Title from "./Title"
 
 const Skills = () => {
   const skillList = [
@@ -38,9 +39,8 @@ const Skills = () => {
 
   return(
     <div id = "skills" className = "flex flex-col items-center flex-1 min-h-screen w-screen p-12">
-      <div className="w-screen flex justify-center gap-x-3">
-        <span className="text-5xl ">My</span> <span className = "text-5xl font-bold">Skills</span>
-      </div>
+      <Title first="My" second="Skills"/>
+
       <div className="grid grid-cols-4 gap-12 w-full max-w-6xl mt-36">
         {
           skillList.map((item, index) => (
