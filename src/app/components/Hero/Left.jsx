@@ -1,21 +1,4 @@
-'use client'
-import {Banner}from "./Image"
-import { useState, useEffect } from "react";
-
-const Hero = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 1000);
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []); 
-
-  const Left = () => {
+const Left = ({ isMobile }) => {
     return (
       <div className={`${isMobile ? "w-screen px-18 justify-center" : "w-1/2 p-24 mt-24"} flex flex-col items-center`}>
         <div className="flex flex-col gap-y-8">
@@ -44,20 +27,4 @@ const Hero = () => {
     );
   };
 
-  const Right = () => {
-    return (
-      <div className={`${isMobile ? "w-screen h-[400px] " : "w-1/2 ml-[-250px]"} flex justify-center items-center`}>
-        <Banner id="Banner" alt="Image" className="w-full h-full object-cover" />
-      </div>
-    );
-  };
-
-  return (
-    <div className={`flex min-h-screen w-screen `}>
-      <Left />
-      {!isMobile && <Right />}
-    </div>
-  );
-};
-
-export default Hero;
+  export default Left;

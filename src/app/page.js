@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
+import Hero from "./components/Hero/Hero"
 import Skills from "./components/Skills"
 import Experiences from "./components/Experiences"
 import About from "./components/About.jsx"
