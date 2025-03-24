@@ -1,4 +1,5 @@
 import ExpCard from "./ExpCard"
+import Title from "../Title"
 
 const Experiences = () => {
   const experienceList = [
@@ -26,10 +27,7 @@ const Experiences = () => {
   ]
   return (
     <div className="w-screen min-h-screen bg-black w-screen p-24 flex flex-col gap-y-8 items-center">
-      <div className="text-5xl text-gray-200 flex gap-x-3 justify-center mb-8">
-        <span>My</span> 
-        <span className="font-bold">Experience</span> 
-      </div>
+      <Title first="My" second="Experiences" isDark={true} />
       {
         experienceList.map((item,index)=>(
           <ExpCard key={index} id={item.id} image_type={item.image_type} job_title={item.job_title} year_attended={item.year_attended} job_desc={item.job_desc}/>
