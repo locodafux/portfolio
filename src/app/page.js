@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar"
 import Hero from "./components/Hero/Hero"
 import Skills from "./components/Skills"
 import Experiences from "./components/Experience/Experiences"
-import About from "./components/About.jsx"
+import About from "./components/About"
 import Projects from "./components/Projects/Projects"
 
 
@@ -13,7 +13,7 @@ export default function Home() {
       <Hero />
       <Skills id="skills" />
       <Experiences />
-      <About />
+      <About id="about"/>
       <Projects id="projects"/>
     </div>
   );

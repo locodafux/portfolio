@@ -2,7 +2,7 @@
 import { Banner } from "./Image";
 import { useState, useEffect } from "react";
 
-const About = () => {
+const About = (props) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -17,10 +17,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className={`flex ${isMobile ? "flex-col" : "flex-row min-h-screen"}  w-screen`}>
-      {/* Left Section */}
-
-      {/* Right Section  */}
+    <div id={props.id} className={`flex ${isMobile ? "flex-col" : "flex-row min-h-screen"}  w-screen`}>
       {!isMobile && (
         <div className="w-1/2 flex justify-center items-center ">
           <div className="w-1/2 h-1/2 object-cover">
