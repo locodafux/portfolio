@@ -24,7 +24,7 @@ const About = () => {
       {!isMobile && (
         <div className="w-1/2 flex justify-center items-center ">
           <div className="w-1/2 h-1/2 object-cover">
-          <Banner id="about-pic" alt="Profile Image"  />
+          <Banner path="/about-pic.png" alt="Profile Image"  />
           </div>
         </div>
       )}
