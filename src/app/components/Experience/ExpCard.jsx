@@ -1,4 +1,4 @@
-import { RoundImage } from "./Image"
+import { RoundImage } from "../Image"
 
 const ExpCard = ({ id, job_title, year_attended, job_desc, image_type}) => {
   return (
