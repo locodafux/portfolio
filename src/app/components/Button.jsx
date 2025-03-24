@@ -12,8 +12,24 @@ const CustomButton = ({children}) => {
       </svg>
       {children}
     </button>
-  );
-};
+  )
+}
 
-export default CustomButton;
+const LinkButton = ({children}) => {
+  return(
+    <button className="text-lg bg-black text-white h-14 p-4  font-bold rounded-sm">{children}</button>
+  )
+}
+
+const SocialLink = ({children, isDark}) => {
+  return (
+    <button className={`${ isDark ? "bg-black" : "border-1" } w-[56px] h-[56px] rounded-sm`}>{children}</button>
+  )  
+} 
+
+export {
+  CustomButton,
+  LinkButton,
+  SocialLink
+};
 

@@ -1,5 +1,5 @@
 "use client"
-import CustomButton from "./Button"
+import { CustomButton } from "./Button"
 
 const Navbar = () => { 
 

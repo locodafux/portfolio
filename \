@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import {Input, TextArea } from "./Input"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faReddit, faTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import '../../../lib/fontawesome.js'; // Import your library setup
 
 import { LinkButton, SocialLink} from "../Button"
 const Left = () => {
@@ -17,36 +17,14 @@ const Left = () => {
       <Input type="email" input={email} onchange={(event)=>setEmail(event.target.value)} placeholder="Email"/>
       <Input type="text" input={website} onchange={(event)=>setWebsite(event.target.value)} placeholder="Your Website (if exists)"/>
       <TextArea  input={concern} onchange={(event)=>setConcern(event.target.value)} placeholder="How can I help?*"/>
-      <div className="flex items-center justify-between w-[500px]">
+      <div className="flex items-center justify-between w-full ">
         <LinkButton>Get In Touch</LinkButton>  
-        <SocialLink isDark={true}> 
-        <FontAwesomeIcon 
-              className="rounded-full" icon={faFacebook} 
-              style={{ color: 'white', fontSize: '24px' }} /></
-            SocialLink>
-        <SocialLink>
-        <FontAwesomeIcon
-          className="rounded-full"
-          icon={faReddit}
-          style={{ color: 'black', fontSize: '24px' }}
-        />
-      </SocialLink>
-
-      <SocialLink>
-        <FontAwesomeIcon
-          className="rounded-full"
-          icon={faTwitter}
-          style={{ color: 'black', fontSize: '24px' }}
-        />
-      </SocialLink>
-
-      <SocialLink>
-        <FontAwesomeIcon
-          className="rounded-full"
-          icon={faDiscord}
-          style={{ color: 'black', fontSize: '24px' }}
-        />
-      </SocialLink>
+        <div>
+            <SocialLink isDark={true}> <FontAwesomeIcon className="rounded-full" icon={['fab', 'facebook']} style={{ color: 'white', fontSize: '24px' }} /></SocialLink>
+            <SocialLink isDark={false}><FontAwesomeIcon className="rounded-full" icon={['fab', 'facebook']} style={{ color: 'white', fontSize: '24px' }} /></SocialLink>
+            <SocialLink><FontAwesomeIcon className="rounded-full" icon={['fab', 'facebook']} style={{ color: 'black', fontSize: '24px' }} /></SocialLink>
+            <SocialLink><FontAwesomeIcon className="rounded-full" icon={['fab', 'facebook']} style={{ color: 'black', fontSize: '24px' }} /></SocialLink>
+        </div>
       </div>
     </div>
   )
