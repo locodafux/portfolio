@@ -12,7 +12,7 @@ const Left = () => {
   const [concern, setConcern] = useState('')
 
   return (
-    <div className="w-1/2 h-full flex flex-col items-center py-16 gap-y-8 ">
+    <div className="h-full flex flex-col items-center gap-y-8  justify-center">
       <Input type="text" input={name} onchange={(event)=>setName(event.target.value)} placeholder="Your Name"/>
       <Input type="email" input={email} onchange={(event)=>setEmail(event.target.value)} placeholder="Email"/>
       <Input type="text" input={website} onchange={(event)=>setWebsite(event.target.value)} placeholder="Your Website (if exists)"/>
