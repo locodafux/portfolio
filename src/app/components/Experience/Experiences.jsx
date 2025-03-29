@@ -26,8 +26,10 @@ const Experiences = () => {
     },
   ]
   return (
-    <div className="w-screen min-h-screen bg-black w-screen p-24 flex flex-col gap-y-8 items-center">
-      <Title first="My" second="Experiences" isDark={true} />
+    <div className="w-screen lg:min-h-screen bg-black p-12  lg:p-24 flex flex-col gap-y-8 items-center">
+      <div className="w-screen flex justify-center gap-x-3 lg:text-5xl  text-3xl text-white">
+        <span >My</span> <span className = "font-bold">Experiences</span>
+      </div>
       {
         experienceList.map((item,index)=>(
           <ExpCard key={index} id={item.id} image_type={item.image_type} job_title={item.job_title} year_attended={item.year_attended} job_desc={item.job_desc}/>
