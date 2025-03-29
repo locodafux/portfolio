@@ -2,13 +2,13 @@ const Left = ({ isMobile }) => {
   return (
     <div
       className={`${
-        isMobile ? "w-screen px-18 justify-center" : "w-1/2 p-24 mt-24"
+        isMobile ? "w-screen p-6 " : "w-1/2 p-24 mt-24"
       } flex flex-col items-center`}
     >
       <div className="flex flex-col gap-y-8">
         <div
           className={`${
-            isMobile ? "text-2xl items-center" : "text-5xl"
+            isMobile ? "text-xl items-center gap-y-1" : "text-5xl"
           } flex flex-col gap-y-4`}
         >
           <div>
