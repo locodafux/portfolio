@@ -17,7 +17,7 @@ const About = (props) => {
   }, []);
 
   return (
-    <div id={props.id} className={`flex ${isMobile ? "flex-col" : "flex-row min-h-screen"}  w-screen`}>
+    <div id={props.id} className={`flex ${isMobile ? "flex-col pb-12" : "flex-row min-h-screen"}  w-screen`}>
       {!isMobile && (
         <div className="w-1/2 flex justify-center items-center ">
           <div className="w-1/2 h-1/2 object-cover">
@@ -26,10 +26,10 @@ const About = (props) => {
         </div>
       )}
 
-      <div className={`${isMobile ? "w-screen p-12 text-center" : "w-1/2 p-24"} flex flex-col items-center mt-24`}>
+      <div className={`${isMobile ? "w-screen text-center" : "w-1/2 p-24"} flex flex-col items-center mt-24`}>
         <div className="flex flex-col gap-y-8">
           <div className={`${isMobile ? "text-3xl" : "text-5xl"} flex flex-col gap-y-4`}>
-            <div className="flex gap-x-3">
+            <div className="flex gap-x-3 justify-center lg:justify-start">
               <span>About</span>
               <span className="font-bold">Me</span>
             </div>

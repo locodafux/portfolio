@@ -38,7 +38,7 @@ const Skills = () => {
   ]
 
   return(
-    <div id = "skills" className = "flex flex-col items-center flex-1 lg:min-h-screen w-screen pb-12 ">
+    <div id = "skills" className = "flex flex-col items-center flex-1 lg:min-h-screen w-screen pt-8  pb-12 ">
 
       <div className="w-screen flex justify-center gap-x-3 lg:text-5xl  text-3xl">
         <span >My</span> <span className = " font-bold">Skills</span>
