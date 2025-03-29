@@ -23,7 +23,7 @@ const Navbar = () => {
       </div> 
 
       <div>
-        <CustomButton> 
+        <CustomButton href="/timkang-resume.pdf"  download="timkang-resume.pdf"> 
           Resume
         </CustomButton>
       </div> 
