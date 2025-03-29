@@ -27,7 +27,7 @@ const Experiences = () => {
   ]
   return (
     <div className="w-screen lg:min-h-screen bg-black p-12  lg:p-24 flex flex-col gap-y-8 items-center">
-      <div className="w-screen flex justify-center gap-x-3 lg:text-5xl  text-3xl text-white">
+      <div className="w-screen flex justify-center gap-x-3 lg:text-5xl  text-3xl text-white lg:mb-6">
         <span >My</span> <span className = "font-bold">Experiences</span>
       </div>
       {
