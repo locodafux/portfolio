@@ -10,9 +10,9 @@ import Contact from "./components/Contact/Contact"
 export default function Home() {
   return (
     <div className = "flex flex-col h-screen">
-      {/* <Navbar /> */}
-      {/* <Hero /> */}
-      {/* <Skills id="skills" /> */}
+      <Navbar />
+      <Hero />
+      <Skills id="skills" />
       <Experiences />
       <About id="about"/>
       <Projects id="projects"/>
