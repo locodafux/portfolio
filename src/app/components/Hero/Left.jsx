@@ -8,7 +8,7 @@ const Left = ({ isMobile }) => {
       <div className="flex flex-col gap-y-8">
         <div
           className={`${
-            isMobile ? "text-3xl items-center" : "text-5xl"
+            isMobile ? "text-2xl items-center" : "text-5xl"
           } flex flex-col gap-y-4`}
         >
           <div>
