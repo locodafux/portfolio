@@ -24,8 +24,10 @@ const Projects = (props) => {
   ] 
 
   return (
-    <div id={props.id} className=" p-24 flex flex-col items-center bg-black">
-      <Title first="My" second="Projects" isDark={ true }/>
+    <div id={props.id} className=" p-12 lg:p-24 flex flex-col items-center bg-black">
+      <div className="w-screen flex justify-center gap-x-3 lg:text-5xl  text-3xl text-white">
+        <span >My</span> <span className = " font-bold">Projects</span>
+      </div>
       {projects.map((item, index) => (
         <ProjectCard {...item} count={index + 1} key={index} />
       ))}

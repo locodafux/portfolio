@@ -18,7 +18,7 @@ const Hero = () => {
   }, []); 
 
   return (
-    <div className={`flex lg:min-h-screen w-screen `}>
+    <div className={`flex min-h-screen w-screen `}>
       <Left isMobile={isMobile} />
       {!isMobile && <Right isMobile={ isMobile } Banner={ Banner } />}
     </div>
