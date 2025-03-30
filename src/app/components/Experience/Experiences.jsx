@@ -13,7 +13,7 @@ const Experiences = () => {
     {
       id: "erovoutika-logo",
       image_type: "png",
-      job_title: "Web Developer at Erovoutika Inc. ( Internship )",
+      job_title: "Web Developer at Erovoutika Inc. (Internship)",
       year_attended: "Feb 2024 - June 2024",
       job_desc: "As a Web Developer, I handle the backend development of an Attendance Monitoring System using Tailwind CSS, Bootstrap, MySQL, and PHP, hosted on GoDaddy. I have also worked on the backend of Eroquiz, a quiz app built with Android Studio.",
     },

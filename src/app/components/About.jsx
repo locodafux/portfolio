@@ -26,7 +26,7 @@ const About = (props) => {
         </div>
       )}
 
-      <div className={`${isMobile ? "w-screen text-center" : "w-1/2 p-24"} flex flex-col items-center mt-24`}>
+      <div className={`${isMobile ? "w-screen text-center p-8" : "w-1/2 p-24"} flex flex-col items-center mt-24`}>
         <div className="flex flex-col gap-y-8">
           <div className={`${isMobile ? "text-3xl" : "text-5xl"} flex flex-col gap-y-4`}>
             <div className="flex gap-x-3 justify-center lg:justify-start">
