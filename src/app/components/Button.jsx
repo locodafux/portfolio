@@ -17,7 +17,7 @@ const CustomButton = ({children, href, download}) => {
 
 const LinkButton = ({children}) => {
   return(
-    <button className="text-lg bg-black text-white h-14 p-4  font-bold rounded-sm">{children}</button>
+    <button className="text-lg w-fit bg-black text-white h-14 p-4  font-bold rounded-sm">{children}</button>
   )
 }
 

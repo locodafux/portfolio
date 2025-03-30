@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Input, TextArea } from "./Input";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { LinkButton, SocialLink } from "../Button";
 import {
   faFacebook,
   faViber,
@@ -9,7 +10,6 @@ import {
   faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
 
-import { LinkButton, SocialLink } from "../Button";
 const Left = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -41,38 +41,40 @@ const Left = () => {
         onchange={(event) => setConcern(event.target.value)}
         placeholder="How can I help?*"
       />
-      <div className="flex items-center justify-between w-[500px]">
+      <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-y-8 lg:gap-0 w-[343px] lg:w-[500px]">
         <LinkButton>Get In Touch</LinkButton>
-        <SocialLink isDark={true}>
-          <FontAwesomeIcon
-            className="rounded-full"
-            icon={faFacebook}
-            style={{ color: "white", fontSize: "24px" }}
-          />
-        </SocialLink>
-        <SocialLink>
-          <FontAwesomeIcon
-            className="rounded-full"
-            icon={faViber}
-            style={{ color: "black", fontSize: "24px" }}
-          />
-        </SocialLink>
+        <div className="flex gap-x-6">
+          <SocialLink isDark={true}>
+            <FontAwesomeIcon
+              className="rounded-full"
+              icon={faFacebook}
+              style={{ color: "white", fontSize: "24px" }}
+            />
+          </SocialLink>
+          <SocialLink>
+            <FontAwesomeIcon
+              className="rounded-full"
+              icon={faViber}
+              style={{ color: "black", fontSize: "24px" }}
+            />
+          </SocialLink>
 
-        <SocialLink>
-          <FontAwesomeIcon
-            className="rounded-full"
-            icon={faTwitter}
-            style={{ color: "black", fontSize: "24px" }}
-          />
-        </SocialLink>
+          <SocialLink>
+            <FontAwesomeIcon
+              className="rounded-full"
+              icon={faTwitter}
+              style={{ color: "black", fontSize: "24px" }}
+            />
+          </SocialLink>
 
-        <SocialLink>
-          <FontAwesomeIcon
-            className="rounded-full"
-            icon={faDiscord}
-            style={{ color: "black", fontSize: "24px" }}
-          />
-        </SocialLink>
+          <SocialLink>
+            <FontAwesomeIcon
+              className="rounded-full"
+              icon={faDiscord}
+              style={{ color: "black", fontSize: "24px" }}
+            />
+          </SocialLink>
+        </div>
       </div>
     </div>
   );
