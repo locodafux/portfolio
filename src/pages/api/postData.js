@@ -10,15 +10,6 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-// Log the API keys
-console.log("Firebase API Keys:");
-console.log("apiKey:", firebaseConfig.apiKey);
-console.log("authDomain:", firebaseConfig.authDomain);
-console.log("projectId:", firebaseConfig.projectId);
-console.log("storageBucket:", firebaseConfig.storageBucket);
-console.log("messagingSenderId:", firebaseConfig.messagingSenderId);
-console.log("appId:", firebaseConfig.appId);
-
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
